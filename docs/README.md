@@ -122,7 +122,7 @@ Once the placeholders have been updated, deploy:
 
 ```sh
 # This command will make sure that you have updated the placeholders
-grep -r '\${' docs/yaml/ || kubectl apply -f docs/yaml/01-namespace.yaml -f 03-deployment.yaml -f 04-service.yaml -f 05-ingress.yaml
+grep -r '\${' docs/yaml/ || kubectl apply -f docs/yaml/01-namespace.yaml -f docs/yaml/03-deployment.yaml -f docs/yaml/04-service.yaml -f docs/yaml/05-ingress.yaml
 ```
 
 #### Create secret
